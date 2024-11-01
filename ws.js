@@ -85,12 +85,14 @@ function Factorial(num){
 function PrimeNum(num){
     if (num<=1) return false;
     for(var i=2;i<num;i++){
+        if (num % i === 0){
         return false;
     }
+    }  
     return true;
  }
  console.log(PrimeNum(7));  
- 
+
  //3Fibonacci Sequence:
  function fibonacci(num) {
     let num1 = 0;
